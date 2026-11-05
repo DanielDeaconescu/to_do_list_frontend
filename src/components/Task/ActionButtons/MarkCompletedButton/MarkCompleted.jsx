@@ -14,7 +14,7 @@ const StyledButton = styled.button`
 
 function MarkCompletedButton({ taskId, fetchTasks }) {
   const [csrfToken, setCsrfToken] = useState(null);
-  const API_URL = import.meta.env.APP_URL;
+  const API_URL = import.meta.env.VITE_APP_URL;
   const [completed, setCompleted] = useState(false);
 
   useEffect(() => {

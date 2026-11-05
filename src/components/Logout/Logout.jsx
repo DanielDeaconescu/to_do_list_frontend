@@ -10,7 +10,7 @@ const StyledLink = styled.a`
 `;
 
 function Logout() {
-  const API_URL = import.meta.env.APP_URL;
+  const API_URL = import.meta.env.VITE_APP_URL;
   const navigate = useNavigate();
   const { logout } = useAuth();
 

@@ -22,7 +22,7 @@ function ResetPasswordForm() {
     getCsrfToken().then((token) => setCsrfToken(token));
   }, []);
 
-  const API_URL = import.meta.env.APP_URL;
+  const API_URL = import.meta.env.VITE_APP_URL;
 
   const navigate = useNavigate();
 
