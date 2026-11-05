@@ -21,7 +21,7 @@ const StyledList = styled.ul`
   margin: 0;
 `;
 
-const API_URL = "http://localhost:8000";
+const API_URL = import.meta.env.APP_URL;
 
 function MainPage() {
   const [editTask, setEditTask] = useState(null);

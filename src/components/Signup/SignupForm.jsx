@@ -22,7 +22,7 @@ function SignupForm() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [csrfToken, setCsrfToken] = useState();
   const [validationError, setValidationError] = useState("");
-  const API_URL = "http://localhost:8000";
+  const API_URL = import.meta.env.APP_URL;
 
   const navigate = useNavigate();
 

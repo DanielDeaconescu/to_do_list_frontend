@@ -33,7 +33,7 @@ function LoginForm() {
 
   console.log(csrfToken);
 
-  const API_URL = "http://localhost:8000";
+  const API_URL = import.meta.env.APP_URL;
   const { login } = useAuth();
 
   const navigate = useNavigate();

@@ -14,7 +14,7 @@ const StyledButton = styled.button`
 `;
 
 function EditButton({ task, fetchTasks }) {
-  const API_URL = "http://localhost:8000";
+  const API_URL = import.meta.env.APP_URL;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editTask, setEditTask] = useState(null);
 

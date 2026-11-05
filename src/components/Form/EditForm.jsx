@@ -19,7 +19,7 @@ const EditButton = styled.button`
 `;
 
 function EditForm({ onCloseModal, fetchTasks, editTask }) {
-  const API_URL = "http://localhost:8000";
+  const API_URL = import.meta.env.APP_URL;
 
   const [taskId, setTaskId] = useState("");
   const [name, setName] = useState("");

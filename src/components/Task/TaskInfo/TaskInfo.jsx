@@ -1,6 +1,4 @@
 function TaskInfo({ task }) {
-  console.log("task in TaskInfo: ", task);
-
   return (
     <div className="ms-2 me-auto">
       <div>

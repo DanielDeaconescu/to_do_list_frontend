@@ -10,7 +10,7 @@ const StyledLink = styled.a`
 `;
 
 function Logout() {
-  const API_URL = "http://localhost:8000";
+  const API_URL = import.meta.env.APP_URL;
   const navigate = useNavigate();
   const { logout } = useAuth();
 

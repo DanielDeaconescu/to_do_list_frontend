@@ -19,7 +19,7 @@ const CancelButton = styled.button`
 `;
 
 function DeleteForm({ onCloseModal, taskId, fetchTasks }) {
-  const API_URL = "http://localhost:8000";
+  const API_URL = import.meta.env.APP_URL;
   const [csrfToken, setCsrfToken] = useState();
 
   useEffect(() => {

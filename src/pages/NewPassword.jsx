@@ -48,7 +48,7 @@ function NewPassword() {
   const [csrfToken, setCsrfToken] = useState("");
   const [error, setError] = useState("");
   const [statusLink, setStatusLink] = useState("checking");
-  const API_URL = "http://localhost:8000";
+  const API_URL = import.meta.env.APP_URL;
   const navigate = useNavigate();
   const { token } = useParams();
   console.log(token);

@@ -4,7 +4,7 @@ import { getCsrfToken } from "../helpers/getCsrfToken";
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-  const API_URL = "http://localhost:8000";
+  const API_URL = import.meta.env.APP_URL;
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true);
   const [currentUser, setCurrentUser] = useState(null);
