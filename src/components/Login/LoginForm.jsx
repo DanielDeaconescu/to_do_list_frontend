@@ -31,8 +31,6 @@ function LoginForm() {
     getCsrfToken().then((token) => setCsrfToken(token));
   }, []);
 
-  console.log(csrfToken);
-
   const API_URL = import.meta.env.VITE_APP_URL;
   const { login } = useAuth();
 
